@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>宿舍分摊记账小程序 | 卢俊霖作品集</title>
+    <meta name="description" content="卢俊霖使用 Claude Code 连接 DeepSeek 完成的宿舍分摊记账小程序作品详情。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="./index.html#works" aria-label="返回作品列表">
+        <span class="brand-mark">LJ</span>
+        <span>作品详情</span>
+      </a>
+      <nav class="nav" aria-label="作品导航">
+        <a class="magnetic" href="./work-3d.html">上一个</a>
+        <a class="magnetic" href="./index.html#works">作品</a>
+        <a class="magnetic" href="./index.html#contact">联系</a>
+      </nav>
+      <button class="theme-toggle magnetic" type="button" aria-label="切换视觉模式">
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section detail-hero">
+        <div class="reveal">
+          <a class="back-link magnetic" href="./index.html#works">返回作品列表</a>
+          <p class="eyebrow">Project 04 / AI Coding / Mini Program</p>
+          <h1 class="detail-title">
+            <span class="muted-line">Vibe Coding</span>
+            宿舍分摊记账小程序
+          </h1>
+          <p class="detail-summary">
+            这是一个面向宿舍日常协作的小程序作品，围绕采购记账、费用分摊、值日安排、贡献榜和月度账单展开。
+            项目使用 Claude Code 连接 DeepSeek 辅助开发，把真实生活问题快速转化成可体验的小程序原型。
+          </p>
+          <div class="detail-meta">
+            <div><strong>Workflow</strong><span>Claude Code + DeepSeek</span></div>
+            <div><strong>Type</strong><span>微信小程序</span></div>
+            <div><strong>Feature</strong><span>记账 / 分摊 / 值日</span></div>
+          </div>
+        </div>
+        <div class="detail-feature reveal">
+          <img src="./新建文件夹(1).jpg" alt="宿舍分摊记账小程序首页界面" />
+        </div>
+      </section>
+
+      <section class="section detail-content">
+        <article class="detail-panel reveal">
+          <h2>作品介绍</h2>
+          <p>
+            宿舍生活中经常会出现公共采购、费用平均分摊、值日提醒和成员贡献不清晰的问题。
+            这个小程序把这些场景整合成一个轻量工具：室友可以记录采购，查看月度账单，完成值日任务，
+            也能通过贡献榜看到每个人在宿舍事务中的参与情况。
+          </p>
+        </article>
+        <article class="detail-panel reveal">
+          <h3>功能亮点</h3>
+          <ul>
+            <li>首页聚合本月支出、人均费用、采购笔数和最近采购。</li>
+            <li>采购记录支持分类、金额、成员和日期展示，便于后续结算。</li>
+            <li>账单页提供月度统计、分类统计、对比上月和分享账单入口。</li>
+            <li>值日表记录每周任务与完成状态，贡献榜形成正向反馈。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="detail-panel experience-box reveal">
+          <div>
+            <p class="section-kicker">Try It</p>
+            <h2>扫码体验小程序</h2>
+            <p>
+              使用微信扫描右侧小程序码即可进入体验。这个作品更适合展示 AI 辅助开发能力、
+              需求拆解能力，以及把生活场景做成可交互产品的完整思路。
+            </p>
+          </div>
+          <div class="qr-card">
+            <img src="./微信图片_20260608210235_158_42.jpg" alt="宿舍分摊记账小程序码" />
+            <span>微信扫码体验</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Screens</p>
+          <h2>界面展示</h2>
+        </div>
+        <div class="detail-gallery phone-gallery">
+          <figure class="reveal">
+            <img src="./新建文件夹(1).jpg" alt="宿舍分摊记账小程序首页" />
+            <figcaption>首页总览：支出、人均、采购入口和值日提醒</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="./新建文件夹.jpg" alt="宿舍分摊记账小程序采购记录" />
+            <figcaption>采购记录：公共采购、分类和金额展示</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="./新建文件夹(2).jpg" alt="宿舍分摊记账小程序账单" />
+            <figcaption>账单统计：月度支出、分类统计和明细</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="./新建文件夹(1).png" alt="宿舍分摊记账小程序值日表" />
+            <figcaption>值日表：每周任务与完成状态</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="./新建文件夹.png" alt="宿舍分摊记账小程序贡献榜" />
+            <figcaption>贡献榜：购买力、还款速度和综合评分</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="./新建文件夹(3).jpg" alt="宿舍分摊记账小程序其他界面" />
+            <figcaption>更多界面：围绕宿舍协作继续扩展</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

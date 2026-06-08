@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>卢俊霖 | 个人作品集</title>
+    <meta
+      name="description"
+      content="卢俊霖的个人简历与作品集展示网站。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" aria-label="回到首页">
+        <span class="brand-mark">LJ</span>
+        <span>卢俊霖</span>
+      </a>
+      <nav class="nav" aria-label="主要导航">
+        <a class="magnetic" href="#works">作品</a>
+        <a class="magnetic" href="#experience">经历</a>
+        <a class="magnetic" href="#skills">能力</a>
+        <a class="magnetic" href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle magnetic" type="button" aria-label="切换视觉模式">
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Digital Media Technology / Portfolio / Motion</p>
+          <h1 class="hero-title" aria-label="用镜头剪出节奏，用三维搭起场景，让故事被看见。">
+            <span class="title-line title-small">用镜头剪出节奏</span>
+            <span class="title-line title-large">用三维搭起场景</span>
+            <span class="title-line title-accent">让故事被看见</span>
+          </h1>
+          <p class="hero-summary">
+            我是卢俊霖，数字媒体技术专业本科生。
+            熟悉摄影、视频剪辑、后期制作与 3D 场景建模，也在持续学习 AI 工具辅助创作。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="#works">查看作品</a>
+            <a class="button ghost magnetic" href="./卢俊霖-影视媒体.pdf" target="_blank" rel="noreferrer">查看简历</a>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal" data-depth="18">
+          <div class="orbital-card main-card tilt-card">
+            <div class="card-topline">
+              <span>Available</span>
+              <span>2026</span>
+            </div>
+            <div class="portrait-visual">
+              <span class="portrait-ring"></span>
+              <img class="portrait-photo" src="./微信图片_20260608171213_150_42.png" alt="卢俊霖头像" />
+            </div>
+            <div class="metric-grid">
+              <div>
+                <strong>04</strong>
+                <span>精选作品</span>
+              </div>
+              <div>
+                <strong>CET-4</strong>
+                <span>英语四级</span>
+              </div>
+              <div>
+                <strong>C2</strong>
+                <span>驾驶证</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note note-a">Premiere Pro</div>
+          <div class="floating-note note-b">3D Max</div>
+          <div class="floating-note note-c">Photography</div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="能力关键词">
+        <div class="marquee-track">
+          <span>Premiere Pro</span>
+          <span>3D Max</span>
+          <span>Photography</span>
+          <span>After Effect</span>
+          <span>C4D</span>
+          <span>Figma</span>
+          <span>Photoshop</span>
+          <span>Lightroom</span>
+          <span>AI Workflow</span>
+          <span>Claude Code</span>
+          <span>DeepSeek</span>
+          <span>Film Editing</span>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-kicker reveal">About</div>
+        <div class="intro-grid">
+          <h2 class="reveal">一个正在把影视创作、三维视觉和数字媒体技术连起来的人。</h2>
+          <p class="reveal">
+            在校期间主修 3D 场景设计、影视创意设计、数字媒体后期制作、游戏项目策划等课程。
+            熟悉 3D Max、Photoshop、Illustrator、Lightroom、Premiere Pro、剪映等工具，
+            也自学 AutoCAD、SketchUp、酷家乐、D5 渲染器，并对 Claude Code、ChatGPT、Codex 等 AI 工具有实践经验。
+          </p>
+        </div>
+      </section>
+
+      <section id="works" class="section works">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Selected Works</p>
+          <h2>精选作品</h2>
+          <div class="filter-row" aria-label="作品筛选">
+            <button class="filter active" type="button" data-filter="all">全部</button>
+            <button class="filter" type="button" data-filter="film">微电影</button>
+            <button class="filter" type="button" data-filter="video">短视频</button>
+            <button class="filter" type="button" data-filter="3d">3D</button>
+            <button class="filter" type="button" data-filter="ai">AI 小程序</button>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card reveal tilt-card" data-category="film">
+            <div class="work-media">
+              <video src="./别等风停再奔跑.mp4" preload="metadata" muted loop playsinline></video>
+              <button class="media-toggle" type="button">播放</button>
+            </div>
+            <div class="work-body">
+              <p>Project 01 / Short Film</p>
+              <h3><a href="./work-film.html">《别等风停再奔跑》微电影</a></h3>
+              <span>影视创意设计实验课程期末作品，主要担任剪辑，并参与部分摄影及出镜。作品在课程评比中多项第一，获评班级最佳作品。</span>
+              <a class="work-link magnetic" href="./work-film.html">进入作品</a>
+            </div>
+          </article>
+          <article class="work-card reveal tilt-card" data-category="video">
+            <div class="work-media">
+              <video src="./旅游攻略类短视频.mp4" preload="metadata" muted loop playsinline></video>
+              <button class="media-toggle" type="button">播放</button>
+            </div>
+            <div class="work-body">
+              <p>Project 02 / Travel Video</p>
+              <h3><a href="./work-travel.html">旅游攻略类短视频</a></h3>
+              <span>围绕目的地信息、节奏控制与平台观看习惯进行剪辑，适合展示素材整理、叙事节奏和短视频成片能力。</span>
+              <a class="work-link magnetic" href="./work-travel.html">进入作品</a>
+            </div>
+          </article>
+          <article class="work-card reveal tilt-card" data-category="3d">
+            <div class="work-media image-stack">
+              <img src="./3d场景建模/1.jpg" alt="3D 场景建模作品 1" />
+              <img src="./3d场景建模/3.jpg" alt="3D 场景建模作品 2" />
+              <img src="./3d场景建模/6.jpg" alt="3D 场景建模作品 3" />
+            </div>
+            <div class="work-body">
+              <p>Project 03 / 3D Scene</p>
+              <h3><a href="./work-3d.html">3D 场景建模</a></h3>
+              <span>使用三维建模与渲染流程完成空间画面，呈现场景搭建、材质表现、构图与光影控制能力。</span>
+              <a class="work-link magnetic" href="./work-3d.html">进入作品</a>
+            </div>
+          </article>
+          <article class="work-card reveal tilt-card" data-category="ai">
+            <div class="work-media image-stack phone-stack">
+              <img src="./新建文件夹(1).jpg" alt="宿舍分摊记账小程序首页" />
+              <img src="./新建文件夹(2).jpg" alt="宿舍分摊记账小程序账单页" />
+              <img src="./新建文件夹.png" alt="宿舍分摊记账小程序贡献榜" />
+            </div>
+            <div class="work-body">
+              <p>Project 04 / AI Mini Program</p>
+              <h3><a href="./work-dorm.html">宿舍分摊记账小程序</a></h3>
+              <span>使用 Claude Code 连接 DeepSeek 进行 Vibe Coding，完成面向宿舍生活的采购记账、账单分摊、值日安排与贡献榜展示。</span>
+              <a class="work-link magnetic" href="./work-dorm.html">扫码体验</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section timeline-section">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experience</p>
+          <h2>经历时间线</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>2024 - 2028</span>
+            <h3>广州新华学院 / 数字媒体技术 本科</h3>
+            <p>主修 3D 场景设计、影视创意设计、数字媒体后期制作、游戏项目策划等课程；在 3D 建模与影视剪辑方向表现突出。</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>2025.10 - 2026.02</span>
+            <h3>《别等风停再奔跑》微电影 / 剪辑</h3>
+            <p>五人小组课程作品，主要负责剪辑，并参与部分摄影及出镜；最终作品成为课程最佳作品。</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>2021 - 2024</span>
+            <h3>东莞市第五高级中学 / 宣广组</h3>
+            <p>负责校园活动摄影与视频后期制作，独立完成多场影像记录与剪辑工作，参与策划并执行校园宣传活动。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skill System</p>
+          <h2>能力矩阵</h2>
+        </div>
+        <div class="skill-board">
+          <div class="skill-panel reveal">
+            <span>01</span>
+            <h3>影视制作</h3>
+            <p>摄影、素材整理、视频剪辑、后期制作、短视频节奏与叙事表达。</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span>02</span>
+            <h3>三维与设计</h3>
+            <p>3D Max、C4D、AutoCAD、SketchUp、D5 渲染器、Photoshop、Illustrator。</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span>03</span>
+            <h3>综合工具</h3>
+            <p>Figma、Lightroom、Premiere Pro、After Effect、办公软件与 AI 辅助工作流。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <p class="section-kicker">Contact</p>
+        <h2>期待让更多作品被认真看见。</h2>
+        <p>籍贯东莞。为人热心诚恳，认真严谨，具备团队协作能力、抗压能力与较高执行效率。</p>
+        <div class="contact-actions">
+          <a class="button primary magnetic" href="mailto:3533481627@qq.com">3533481627@qq.com</a>
+          <a class="button ghost magnetic" href="tel:18025197202">18025197202</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
